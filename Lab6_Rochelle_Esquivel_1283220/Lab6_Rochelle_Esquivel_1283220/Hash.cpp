@@ -19,6 +19,4 @@ void Hash::searchTable(int key) {
         cout << "El número no fue encontrado en el arreglo" << endl;
     }
     return;
-
-
 }

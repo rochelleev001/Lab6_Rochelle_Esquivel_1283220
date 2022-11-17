@@ -121,9 +121,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Cuadrado.cpp" />
     <ClCompile Include="Ejercicio1.cpp" />
-    <ClCompile Include="Figuras.cpp" />
     <ClCompile Include="Hash.cpp" />
     <ClCompile Include="MyForm.cpp" />
     <ClCompile Include="Rectangulo.cpp" />
@@ -136,6 +134,8 @@
     <ClInclude Include="MyForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="Rectangulo.h" />
+    <ClInclude Include="Triangulo.h" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="MyForm.resx">
