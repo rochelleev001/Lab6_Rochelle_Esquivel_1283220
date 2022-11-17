@@ -44,9 +44,35 @@ void Ejercicio1::ordenar_Num(int Mat[], int inicio, int final) {
     if (i < final)
         ordenar_Num(Mat, i, final); 
 }
+//Con ayuda de: https://www.youtube.com/watch?v=pxh4QFzDh-Q
 void Ejercicio1::bus_Binaria(int Mat[], int dato, char band) {
     int inf = 0;
     int sup = 10;
+    int mitad;
     ordenar_Num(Mat, 0, 10 - 1);
     mostrar_Num(Mat, 10);
+
+     band = 'F';
+     while (inf <= sup) {
+         mitad = (inf + sup) / 2;
+         if (Mat[mitad] == dato) {
+             band = 'V';
+             break;
+         }
+         else if (Mat[mitad] > dato) {
+             sup = mitad;
+             mitad = (inf + sup) / 2;
+         }
+         else if (Mat[mitad] < dato) {
+             inf = mitad;
+             mitad = (inf + sup) / 2;
+         }
+         
+     }
+     if (band == 'V') {
+         cout << "El número ha sido encontrado en la posición: " << mitad << endl;
+     }
+     else {
+         cout << "No se ha encontrado al número" << endl;
+     }
 }
