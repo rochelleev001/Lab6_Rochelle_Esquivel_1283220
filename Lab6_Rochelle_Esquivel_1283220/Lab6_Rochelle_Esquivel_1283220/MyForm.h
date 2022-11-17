@@ -54,8 +54,29 @@ namespace Lab6RochelleEsquivel1283220 {
 	private: System::Windows::Forms::TextBox^ textBox4;
 	private: System::Windows::Forms::Label^ label9;
 	private: System::Windows::Forms::TabControl^ tabControl1;
+
+
 	private: System::Windows::Forms::TabPage^ tabPage1;
 	private: System::Windows::Forms::TabPage^ tabPage2;
+	private: System::Windows::Forms::TabPage^ tabPage3;
+	private: System::Windows::Forms::Button^ button3;
+	private: System::Windows::Forms::TextBox^ textBox7;
+	private: System::Windows::Forms::TextBox^ textBox6;
+	private: System::Windows::Forms::TextBox^ textBox5;
+	private: System::Windows::Forms::Label^ label14;
+	private: System::Windows::Forms::Label^ label13;
+	private: System::Windows::Forms::Label^ label12;
+	private: System::Windows::Forms::Label^ label11;
+	private: System::Windows::Forms::Label^ label10;
+	private: System::Windows::Forms::Button^ button4;
+	private: System::Windows::Forms::Label^ label15;
+	private: System::Windows::Forms::Label^ label16;
+	private: System::Windows::Forms::Label^ label17;
+	private: System::Windows::Forms::Label^ label18;
+	private: System::Windows::Forms::Label^ label19;
+	private: System::Windows::Forms::TextBox^ textBox8;
+	private: System::Windows::Forms::TextBox^ textBox9;
+	private: System::Windows::Forms::TextBox^ textBox10;
 
 
 	private:
@@ -90,9 +111,30 @@ namespace Lab6RochelleEsquivel1283220 {
 			this->label9 = (gcnew System::Windows::Forms::Label());
 			this->tabControl1 = (gcnew System::Windows::Forms::TabControl());
 			this->tabPage1 = (gcnew System::Windows::Forms::TabPage());
+			this->button3 = (gcnew System::Windows::Forms::Button());
+			this->textBox7 = (gcnew System::Windows::Forms::TextBox());
+			this->textBox6 = (gcnew System::Windows::Forms::TextBox());
+			this->textBox5 = (gcnew System::Windows::Forms::TextBox());
+			this->label14 = (gcnew System::Windows::Forms::Label());
+			this->label13 = (gcnew System::Windows::Forms::Label());
+			this->label12 = (gcnew System::Windows::Forms::Label());
+			this->label11 = (gcnew System::Windows::Forms::Label());
+			this->label10 = (gcnew System::Windows::Forms::Label());
 			this->tabPage2 = (gcnew System::Windows::Forms::TabPage());
+			this->tabPage3 = (gcnew System::Windows::Forms::TabPage());
+			this->button4 = (gcnew System::Windows::Forms::Button());
+			this->label15 = (gcnew System::Windows::Forms::Label());
+			this->label16 = (gcnew System::Windows::Forms::Label());
+			this->label17 = (gcnew System::Windows::Forms::Label());
+			this->label18 = (gcnew System::Windows::Forms::Label());
+			this->label19 = (gcnew System::Windows::Forms::Label());
+			this->textBox8 = (gcnew System::Windows::Forms::TextBox());
+			this->textBox9 = (gcnew System::Windows::Forms::TextBox());
+			this->textBox10 = (gcnew System::Windows::Forms::TextBox());
 			this->tabControl1->SuspendLayout();
+			this->tabPage1->SuspendLayout();
 			this->tabPage2->SuspendLayout();
+			this->tabPage3->SuspendLayout();
 			this->SuspendLayout();
 			// 
 			// label1
@@ -239,6 +281,7 @@ namespace Lab6RochelleEsquivel1283220 {
 			// 
 			this->tabControl1->Controls->Add(this->tabPage1);
 			this->tabControl1->Controls->Add(this->tabPage2);
+			this->tabControl1->Controls->Add(this->tabPage3);
 			this->tabControl1->Location = System::Drawing::Point(435, 47);
 			this->tabControl1->Name = L"tabControl1";
 			this->tabControl1->SelectedIndex = 0;
@@ -247,13 +290,98 @@ namespace Lab6RochelleEsquivel1283220 {
 			// 
 			// tabPage1
 			// 
+			this->tabPage1->Controls->Add(this->button3);
+			this->tabPage1->Controls->Add(this->textBox7);
+			this->tabPage1->Controls->Add(this->textBox6);
+			this->tabPage1->Controls->Add(this->textBox5);
+			this->tabPage1->Controls->Add(this->label14);
+			this->tabPage1->Controls->Add(this->label13);
+			this->tabPage1->Controls->Add(this->label12);
+			this->tabPage1->Controls->Add(this->label11);
+			this->tabPage1->Controls->Add(this->label10);
 			this->tabPage1->Location = System::Drawing::Point(4, 22);
 			this->tabPage1->Name = L"tabPage1";
 			this->tabPage1->Padding = System::Windows::Forms::Padding(3);
-			this->tabPage1->Size = System::Drawing::Size(235, 124);
+			this->tabPage1->Size = System::Drawing::Size(331, 202);
 			this->tabPage1->TabIndex = 0;
 			this->tabPage1->Text = L"tabPage1";
 			this->tabPage1->UseVisualStyleBackColor = true;
+			// 
+			// button3
+			// 
+			this->button3->Location = System::Drawing::Point(234, 153);
+			this->button3->Name = L"button3";
+			this->button3->Size = System::Drawing::Size(75, 23);
+			this->button3->TabIndex = 17;
+			this->button3->Text = L"Calcular";
+			this->button3->UseVisualStyleBackColor = true;
+			this->button3->Click += gcnew System::EventHandler(this, &MyForm::button3_Click);
+			// 
+			// textBox7
+			// 
+			this->textBox7->Location = System::Drawing::Point(89, 86);
+			this->textBox7->Name = L"textBox7";
+			this->textBox7->Size = System::Drawing::Size(100, 20);
+			this->textBox7->TabIndex = 7;
+			// 
+			// textBox6
+			// 
+			this->textBox6->Location = System::Drawing::Point(43, 44);
+			this->textBox6->Name = L"textBox6";
+			this->textBox6->Size = System::Drawing::Size(100, 20);
+			this->textBox6->TabIndex = 6;
+			// 
+			// textBox5
+			// 
+			this->textBox5->Location = System::Drawing::Point(209, 47);
+			this->textBox5->Name = L"textBox5";
+			this->textBox5->Size = System::Drawing::Size(100, 20);
+			this->textBox5->TabIndex = 5;
+			// 
+			// label14
+			// 
+			this->label14->AutoSize = true;
+			this->label14->Location = System::Drawing::Point(136, 130);
+			this->label14->Name = L"label14";
+			this->label14->Size = System::Drawing::Size(53, 13);
+			this->label14->TabIndex = 4;
+			this->label14->Text = L"Perímetro";
+			// 
+			// label13
+			// 
+			this->label13->AutoSize = true;
+			this->label13->Location = System::Drawing::Point(36, 130);
+			this->label13->Name = L"label13";
+			this->label13->Size = System::Drawing::Size(29, 13);
+			this->label13->TabIndex = 3;
+			this->label13->Text = L"Área";
+			// 
+			// label12
+			// 
+			this->label12->AutoSize = true;
+			this->label12->Location = System::Drawing::Point(54, 89);
+			this->label12->Name = L"label12";
+			this->label12->Size = System::Drawing::Size(32, 13);
+			this->label12->TabIndex = 2;
+			this->label12->Text = L"lados";
+			// 
+			// label11
+			// 
+			this->label11->AutoSize = true;
+			this->label11->Location = System::Drawing::Point(169, 47);
+			this->label11->Name = L"label11";
+			this->label11->Size = System::Drawing::Size(34, 13);
+			this->label11->TabIndex = 1;
+			this->label11->Text = L"Altura";
+			// 
+			// label10
+			// 
+			this->label10->AutoSize = true;
+			this->label10->Location = System::Drawing::Point(6, 47);
+			this->label10->Name = L"label10";
+			this->label10->Size = System::Drawing::Size(31, 13);
+			this->label10->TabIndex = 0;
+			this->label10->Text = L"Base";
 			// 
 			// tabPage2
 			// 
@@ -275,6 +403,101 @@ namespace Lab6RochelleEsquivel1283220 {
 			this->tabPage2->Text = L"tabPage2";
 			this->tabPage2->UseVisualStyleBackColor = true;
 			// 
+			// tabPage3
+			// 
+			this->tabPage3->Controls->Add(this->button4);
+			this->tabPage3->Controls->Add(this->label15);
+			this->tabPage3->Controls->Add(this->label16);
+			this->tabPage3->Controls->Add(this->label17);
+			this->tabPage3->Controls->Add(this->label18);
+			this->tabPage3->Controls->Add(this->label19);
+			this->tabPage3->Controls->Add(this->textBox8);
+			this->tabPage3->Controls->Add(this->textBox9);
+			this->tabPage3->Controls->Add(this->textBox10);
+			this->tabPage3->Location = System::Drawing::Point(4, 22);
+			this->tabPage3->Name = L"tabPage3";
+			this->tabPage3->Padding = System::Windows::Forms::Padding(3);
+			this->tabPage3->Size = System::Drawing::Size(331, 202);
+			this->tabPage3->TabIndex = 2;
+			this->tabPage3->Text = L"tabPage3";
+			this->tabPage3->UseVisualStyleBackColor = true;
+			// 
+			// button4
+			// 
+			this->button4->Location = System::Drawing::Point(250, 136);
+			this->button4->Name = L"button4";
+			this->button4->Size = System::Drawing::Size(75, 23);
+			this->button4->TabIndex = 17;
+			this->button4->Text = L"Calcular";
+			this->button4->UseVisualStyleBackColor = true;
+			this->button4->Click += gcnew System::EventHandler(this, &MyForm::button4_Click);
+			// 
+			// label15
+			// 
+			this->label15->AutoSize = true;
+			this->label15->Location = System::Drawing::Point(3, 45);
+			this->label15->Name = L"label15";
+			this->label15->Size = System::Drawing::Size(30, 13);
+			this->label15->TabIndex = 18;
+			this->label15->Text = L"base";
+			// 
+			// label16
+			// 
+			this->label16->AutoSize = true;
+			this->label16->Location = System::Drawing::Point(178, 45);
+			this->label16->Name = L"label16";
+			this->label16->Size = System::Drawing::Size(33, 13);
+			this->label16->TabIndex = 19;
+			this->label16->Text = L"altura";
+			// 
+			// label17
+			// 
+			this->label17->AutoSize = true;
+			this->label17->Location = System::Drawing::Point(81, 89);
+			this->label17->Name = L"label17";
+			this->label17->Size = System::Drawing::Size(32, 13);
+			this->label17->TabIndex = 20;
+			this->label17->Text = L"lados";
+			// 
+			// label18
+			// 
+			this->label18->AutoSize = true;
+			this->label18->Location = System::Drawing::Point(110, 158);
+			this->label18->Name = L"label18";
+			this->label18->Size = System::Drawing::Size(29, 13);
+			this->label18->TabIndex = 21;
+			this->label18->Text = L"Área";
+			// 
+			// label19
+			// 
+			this->label19->AutoSize = true;
+			this->label19->Location = System::Drawing::Point(176, 158);
+			this->label19->Name = L"label19";
+			this->label19->Size = System::Drawing::Size(53, 13);
+			this->label19->TabIndex = 22;
+			this->label19->Text = L"Perímetro";
+			// 
+			// textBox8
+			// 
+			this->textBox8->Location = System::Drawing::Point(140, 82);
+			this->textBox8->Name = L"textBox8";
+			this->textBox8->Size = System::Drawing::Size(100, 20);
+			this->textBox8->TabIndex = 23;
+			// 
+			// textBox9
+			// 
+			this->textBox9->Location = System::Drawing::Point(225, 38);
+			this->textBox9->Name = L"textBox9";
+			this->textBox9->Size = System::Drawing::Size(100, 20);
+			this->textBox9->TabIndex = 24;
+			// 
+			// textBox10
+			// 
+			this->textBox10->Location = System::Drawing::Point(51, 38);
+			this->textBox10->Name = L"textBox10";
+			this->textBox10->Size = System::Drawing::Size(100, 20);
+			this->textBox10->TabIndex = 25;
+			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
@@ -291,8 +514,12 @@ namespace Lab6RochelleEsquivel1283220 {
 			this->Name = L"MyForm";
 			this->Text = L"MyForm";
 			this->tabControl1->ResumeLayout(false);
+			this->tabPage1->ResumeLayout(false);
+			this->tabPage1->PerformLayout();
 			this->tabPage2->ResumeLayout(false);
 			this->tabPage2->PerformLayout();
+			this->tabPage3->ResumeLayout(false);
+			this->tabPage3->PerformLayout();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
@@ -316,15 +543,33 @@ namespace Lab6RochelleEsquivel1283220 {
 private: System::Void textBox3_TextChanged(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
-	figuras* triangulo = new figuras;
-	double base = System::Convert::ToDouble(textBox1->Text);
-	double altura = System::Convert::ToDouble(textBox2->Text);
+	figuras* rectangulo = new figuras;
+	double base = System::Convert::ToDouble(textBox4->Text);
+	double altura = System::Convert::ToDouble(textBox10->Text);
 	double lados = System::Convert::ToDouble(textBox3->Text);
 
-	label2->Text = triangulo->AreaTriangulo(base, altura).ToString();
-	label3->Text = triangulo->PerimetroTriangulo(lados).ToString();
+	label7->Text = rectangulo->AreaRectangulo(base, altura).ToString();
+	label8->Text = rectangulo->PerimetroRectangulo(lados).ToString();
 }
 private: System::Void label7_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) {
+	figuras* triangulo = new figuras;
+	double base = System::Convert::ToDouble(textBox6->Text);
+	double altura = System::Convert::ToDouble(textBox5->Text);
+	double lados = System::Convert::ToDouble(textBox7->Text);
+
+	label13->Text = triangulo->AreaTriangulo(base, altura).ToString();
+	label14->Text = triangulo->PerimetroTriangulo(lados).ToString();
+}
+private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e) {
+	figuras* cuadrado = new figuras;
+	double base = System::Convert::ToDouble(textBox10->Text);
+	double altura = System::Convert::ToDouble(textBox9->Text);
+	double lados = System::Convert::ToDouble(textBox8->Text);
+
+	label18->Text = cuadrado->AreaCuadrado(base, altura).ToString();
+	label19->Text = cuadrado->PerimetroCuadrado(lados).ToString();
 }
 };
 }
