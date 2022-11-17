@@ -6,7 +6,7 @@ private:
     int perimetro;
     int base;
     int altura;
-
-
+public:
+    void Figuras::Insertar();
 };
 

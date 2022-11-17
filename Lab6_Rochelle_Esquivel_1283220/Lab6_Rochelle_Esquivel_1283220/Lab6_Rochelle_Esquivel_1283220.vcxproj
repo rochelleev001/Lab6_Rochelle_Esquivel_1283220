@@ -121,11 +121,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Cuadrado.cpp" />
     <ClCompile Include="Ejercicio1.cpp" />
+    <ClCompile Include="Figuras.cpp" />
+    <ClCompile Include="Hash.cpp" />
     <ClCompile Include="MyForm.cpp" />
+    <ClCompile Include="Rectangulo.cpp" />
+    <ClCompile Include="Triangulo.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Calculos.h" />
     <ClInclude Include="Ejercicio1.h" />
+    <ClInclude Include="Hash.h" />
     <ClInclude Include="MyForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>

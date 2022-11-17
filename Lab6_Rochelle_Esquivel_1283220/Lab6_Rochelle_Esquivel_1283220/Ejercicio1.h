@@ -16,5 +16,5 @@ public:
 	void Ejercicio1::ordenar_Num(int Mat[], int inicio, int final);
 	void Ejercicio1::mostrar_Num(int Mat[], int tam_Arreglo, int i);
 	void Ejercicio1::bus_Binaria(int Mat[], int dato, char band);
-
+	void Ejercicio1::bus_Hash(int Mat[], int dato, char band);
 };
