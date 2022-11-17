@@ -7,3 +7,6 @@ double Rectangulo::perimetro() {
 	double longitud;
 	return longitud * 4;
 }
+int main() {
+
+}

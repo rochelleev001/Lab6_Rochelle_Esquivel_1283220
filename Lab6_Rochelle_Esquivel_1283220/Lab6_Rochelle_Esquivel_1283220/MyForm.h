@@ -1,6 +1,7 @@
 #pragma once
 #include "Ejercicio1.h"
 #include "Calculos.h";
+#include"Lista.h"
 namespace Lab6RochelleEsquivel1283220 {
 
 	using namespace System;
@@ -189,6 +190,7 @@ namespace Lab6RochelleEsquivel1283220 {
 			this->listBox1->Name = L"listBox1";
 			this->listBox1->Size = System::Drawing::Size(120, 95);
 			this->listBox1->TabIndex = 5;
+			this->listBox1->SelectedIndexChanged += gcnew System::EventHandler(this, &MyForm::listBox1_SelectedIndexChanged);
 			// 
 			// textBox2
 			// 
@@ -526,6 +528,7 @@ namespace Lab6RochelleEsquivel1283220 {
 		}
 #pragma endregion
 		array <Ejercicio1^>^ miArreglo;
+		array <Lista^>^ miLista;
 		int tam_Arreglo = 0;
 	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {		
 
@@ -554,6 +557,9 @@ private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e
 private: System::Void label7_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) {
+
+	Lista^ miL = gcnew Lista();
+	miL->insertarLista(lista, dato);
 	figuras* triangulo = new figuras;
 	double base = System::Convert::ToDouble(textBox6->Text);
 	double altura = System::Convert::ToDouble(textBox5->Text);
@@ -563,6 +569,8 @@ private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e
 	label14->Text = triangulo->PerimetroTriangulo(lados).ToString();
 }
 private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e) {
+	Lista^ miL = gcnew Lista();
+	miL->insertarLista(lista, dato);
 	figuras* cuadrado = new figuras;
 	double base = System::Convert::ToDouble(textBox10->Text);
 	double altura = System::Convert::ToDouble(textBox9->Text);
@@ -570,6 +578,19 @@ private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e
 
 	label18->Text = cuadrado->AreaCuadrado(base, altura).ToString();
 	label19->Text = cuadrado->PerimetroCuadrado(lados).ToString();
+}
+private: System::Void listBox1_SelectedIndexChanged(System::Object^ sender, System::EventArgs^ e) {
+	if (listBox1->SelectedIndex >= 0) {
+		Lista^ miL = gcnew Lista();
+		miL->insertarLista(lista, dato);
+		String^ info_Lista = "ID:" + miL->obtener_ID() + "\r\n"
+			+ "Polígono:" + miL->obtener_Poligono() + "\r\n"
+			+ "Área:" + miL->obtener_Area() + "\r\n"
+		+ "Perímetro:" + miL->obtener_Perimetro() + "\r\n"
+		+"Color:" + miL->obtener_Color();
+
+		textBox1->Text = info_Lista;
+	}
 }
 };
 }

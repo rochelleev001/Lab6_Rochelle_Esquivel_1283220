@@ -1,5 +1,9 @@
 #pragma once
-
+#include <iostream>
+#include"Cuadrado.h"
+#include"Triangulo.h"
+#include"Rectangulo.h"
+using namespace std;
 struct figuras
 {
 	double lados, altura, base;
@@ -28,4 +32,5 @@ struct figuras
 	{
 		return lados * 4;
 	}
-}
+};
+
