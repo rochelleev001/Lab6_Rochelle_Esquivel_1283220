@@ -1,6 +1,6 @@
 #pragma once
 #include "Ejercicio1.h"
-#include "Calculos.h"
+#include "Calculos.h";
 namespace Lab6RochelleEsquivel1283220 {
 
 	using namespace System;

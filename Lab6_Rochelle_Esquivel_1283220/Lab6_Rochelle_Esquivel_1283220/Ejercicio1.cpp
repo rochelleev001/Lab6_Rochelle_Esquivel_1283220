@@ -49,9 +49,6 @@ void Ejercicio1::bus_Binaria(int Mat[], int dato, char band) {
     int inf = 0;
     int sup = 10;
     int mitad;
-    ordenar_Num(Mat, 0, 10 - 1);
-    mostrar_Num(Mat, 10);
-
      band = 'F';
      while (inf <= sup) {
          mitad = (inf + sup) / 2;
